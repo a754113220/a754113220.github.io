@@ -1,3 +1,557 @@
 <script>
-  window.location.href="https://blog.csdn.net/qq_38186465"
+  //window.location.href="https://blog.csdn.net/qq_38186465"
 </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>千助</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/aniCss.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<style>
+		html{
+			overflow-y: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="view">
+		<div id="head">
+			<div class="headBox">
+				<div class="logo">
+					<a href="javascript:void(0)" id="logoImg">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<ul id="nav">
+					<li class="navList navThis">首页</li>
+					<li class="navList">业务</li>
+					<li class="navList">案例</li>
+					<li class="navList">客户</li>
+					<li class="navList">品质</li>
+					<li class="navList">增值</li>
+					<li class="navList">关于</li>
+					<li class="navList">联系</li>
+				</ul>
+				<div class="tel">
+					<span></span>
+					<a href="#">4006-123-011</a>
+				</div>
+			</div>
+		</div>
+		<div id="banner" class="scro">
+			<div class="ban"></div>
+			<div class="banTitle">
+				<h1>8</h1>
+				<div class="banJie">
+					<h2>年专注 , 网站建设</h2>
+					<h3>SPECIALITY</h3>
+					<!-- <div class="banLine"></div> -->
+					<p>始于2008-2016展望未来</p>
+					<p>专注于设计体验，专业与解决方案</p>
+				</div>
+			</div>
+			<div class="banNews">
+				<h3>NEWS:</h3>
+				<ul id="news">
+					<li>百度加入信誉度的竞价排名新机制，质量度排名</li>
+					<li>钱都砸去哪里了，为什么我的网站推广没有效果</li>
+					<li>你们关注里约奥运会，我们关注奥运会官方网站</li>
+					<li>还在问做网站哪家公司好？业内人士教你选</li>
+				</ul>
+				<a href="javascript:void(0)">more</a>
+			</div>
+			<ul class="bannNow">
+				<li class="banThis"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="what scro">
+			<div class="whatMain">
+				<div class="title">
+					<div class="titleImg"></div>
+					<h3>我们能做什么</h3>
+				</div>
+				<ul id="canDo">
+					<li class="canList">
+						<div class="whatDO">
+							<div class="cont">
+								<div class="what_left">
+									<div></div>
+								</div>
+								<div class="what_right">
+									<div></div>
+								</div>
+								<div class="what_img what_imgOne"></div>
+							</div>
+							<h3 class="what_txt">高端定制网站</h3>
+							<p class="what_txtPro">企业高端定制网站设计<br/>彰显品牌形象</p>
+							<div class="whatCeng"></div>
+						</div>
+					</li>
+					<li class="canList">
+						<div class="whatDO">
+							<div class="cont">
+								<div class="what_left">
+									<div></div>
+								</div>
+								<div class="what_right">
+									<div></div>
+								</div>
+								<div class="what_img what_imgTwo"></div>
+							</div>
+							<h3 class="what_txt">移动网站建设</h3>
+							<p class="what_txtPro">定制手机网站/微网站制作<br/>布局移动互联网</p>
+							<div class="whatCeng"></div>
+						</div>
+					</li>
+					<li class="canList">
+						<div class="whatDO">
+							<div class="cont">
+								<div class="what_left">
+									<div></div>
+								</div>
+								<div class="what_right">
+									<div></div>
+								</div>
+								<div class="what_img what_imgThird"></div>
+							</div>
+							<h3 class="what_txt">业务系统研发</h3>
+							<p class="what_txtPro">基于B/S架构的系统研发<br/>让业务办公轻松自如</p>
+							<div class="whatCeng"></div>
+						</div>
+					</li>
+					<li class="canList">
+						<div class="whatDO">
+							<div class="cont">
+								<div class="what_left">
+									<div></div>
+								</div>
+								<div class="what_right">
+									<div></div>
+								</div>
+								<div class="what_img what_imgFour"></div>
+							</div>
+							<h3 class="what_txt">App应用程序</h3>
+							<p class="what_txtPro">基于IOS/Android应用开发<br/>掌控智能终端时代</p>
+							<div class="whatCeng"></div>
+						</div>
+					</li>
+					<li class="canList">
+						<div class="whatDO">
+							<div class="cont">
+								<div class="what_left">
+									<div></div>
+								</div>
+								<div class="what_right">
+									<div></div>
+								</div>
+								<div class="what_img what_imgFive"></div>
+							</div>
+							<h3 class="what_txt">服务器运维</h3>
+							<p class="what_txtPro">我们不只提供云硬件和网络<br/>更加注重技术运维</p>
+							<div class="whatCeng"></div>
+						</div>
+					</li>
+				</ul>
+				<div class="canBot"></div>
+			</div>
+		</div>
+		<div class="cases scro">
+			<div class="casesMain">
+				<div class="caseTitle">
+					<span></span>
+					<h2>案例欣赏</h2>
+				</div>
+				<ul id="caseMove">
+					<li>
+						<div class="casFix">
+							<img src="images/case-2.jpg" alt="">
+							<div class="casText">
+								<h5>网站设计</h5>
+								<strong>海尔嫩烤箱官方网站建设</strong>
+								<p>上市公司,官方网站,欧美风格</p>
+							</div>							
+							<div class="casTop">
+								<span></span>
+							</div>
+							<div class="casBot"></div>
+						</div>
+					</li>
+					<li>
+						<div class="casFix">
+							<img src="images/case-3.jpg" alt="">
+							<div class="casText">
+								<h5>网站设计</h5>
+								<strong>探路者H5网站建设项目</strong>
+								<p>上市公司,电子商务网站建设,红色,欧美风格</p>
+							</div>
+							<div class="casTop">
+								<span></span>
+							</div>
+							<div class="casBot"></div>
+						</div>						
+					</li>
+					<li>
+						<div class="casFix">
+							<img src="images/case-4.jpg" alt="">
+							<div class="casText">
+								<h5>网站设计</h5>
+								<strong>中远国际航空网站设计</strong>
+								<p>国有企业,蓝色,欧美风格,上市公司</p>
+							</div>
+							<div class="casTop">
+								<span></span>
+							</div>
+							<div class="casBot"></div>
+						</div>
+					</li>
+				</ul>
+				<div class="caseMore">MORE</div>
+			</div>
+		</div>
+		<div class="cooper scro">
+			<div class="cooperMain">
+				<div class="cooperTitle">
+					<span></span>
+					<h2>他们与千助长期合作</h2>
+				</div>
+				<ul>
+					<li class="cooperBor">
+						<div class="cooperList cop1"></div>
+					</li>
+					<li class="cooperBor">
+						<div class="cooperList cop2"></div>
+					</li>
+					<li class="cooperBor">
+						<div class="cooperList cop3"></div>
+					</li>
+					<li class="cooperBor">
+						<div class="cooperList cop4"></div>
+					</li>
+					<li class="cooperBor copB1">
+						<div class="cooperList cop5"></div>
+					</li>
+					<li class="cooperBor">
+						<div class="cooperList cop6"></div>
+					</li>
+					<li class="cooperBor">
+						<div class="cooperList cop7"></div>
+					</li>
+					<li class="cooperBor">
+						<div class="cooperList cop8"></div>
+					</li>
+					<li class="cooperBor">
+						<div class="cooperList cop9"></div>
+					</li>
+					<li class="cooperBor copB1">
+						<div class="cooperList cop10"></div>
+					</li>
+					<li class="cooperBor  copB2">
+						<div class="cooperList cop11"></div>
+					</li>
+					<li class="cooperBor copB2">
+						<div class="cooperList cop12"></div>
+					</li>
+					<li class="cooperBor copB2">
+						<div class="cooperList cop13"></div>
+					</li>
+					<li class="cooperBor copB2">
+						<div class="cooperList cop14"></div>
+					</li>
+					<li class="cooperBor copB2 copB1">
+						<div class="cooperList cop15"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="resp scro">
+			<div class="respTitle">
+				<span></span>
+				<h2>不同媒介 , 同样精彩</h2>
+			</div>
+			<div class="respMid">
+				<ul>
+					<li>
+						<div class="respMain">
+							<div class="respIcon">
+								<div class="respKind01"></div>
+								<div class="respKind02"></div>
+								<div class="respKind03"></div>
+							</div>
+							<dl>
+								<dd>触及视觉灵魂的设计趋势</dd>
+								<dd>精心布局的用户体验</dd>
+								<dd>毫无顾忌的通过任何终端</dd>
+								<dd>呈现在客户眼前</dd>
+							</dl>
+						</div>
+					</li>
+					<li style="margin-left:125px;">
+						<div class="respMain">
+							<div class="respIcon">
+								<div class="respKind04"></div>
+								<div class="respKind05"></div>
+								<div class="respKind06"></div>
+								<div class="respKind07"></div>
+							</div>
+							<dl>
+								<dd>html5+css3响应式布局</dd>
+								<dd>卓越的浏览器兼容性</dd>
+								<dd>因为高端,所以出众</dd>
+							</dl>
+						</div>
+					</li>
+					<li  style="margin-left:125px;">
+						<div class="respMain">
+							<div class="respIcon">
+								<div class="respKind08"></div>
+								<div class="respKind09"></div>
+								<div class="respKind10"></div>
+							</div>
+							<dl>
+								<dd>基于B/S架构的网站建设</dd>
+								<dd>无障碍的跨平台应用</dd>
+								<dd>无需客户下载安装即可使用</dd>
+								<dd>云端管理,轻松服务</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="respLook">你以为看到了网站的全部？</div>
+		</div>
+		<div class="marke scro">
+			<div class="markeMain">
+				<div class="markeTitle">
+					<div class="markeImg"></div>
+					<h3>整合营销抢占商机</h3>
+				</div>
+				<ul id="markeIcon">
+					<li class="markeList">
+						<div class="markeCont">
+							<div class="markeTxt">
+								<div class="marke_left">
+									<div></div>
+								</div>
+								<div class="marke_right">
+									<div></div>
+								</div>
+								<div class="marke_img marke_img01"></div>
+							</div>						
+						</div>
+						<h3 class="marke_txtCopy">搜索引擎</h3>
+						<p class="marke_txtProCopy">SEO优化<br/>搜索引擎竞价</p>
+					</li>
+					<li class="markeList">
+						<div class="markeCont">
+							<div class="markeTxt">
+								<div class="marke_left">
+									<div></div>
+								</div>
+								<div class="marke_right">
+									<div></div>
+								</div>
+								<div class="marke_img marke_img02"></div>
+							</div>						
+						</div>
+						<h3 class="marke_txtCopy">搜索引擎</h3>
+						<p class="marke_txtProCopy">SEO优化<br/>搜索引擎竞价</p>
+					</li>
+					<li class="markeList">
+						<div class="markeCont">
+							<div class="markeTxt">
+								<div class="marke_left">
+									<div></div>
+								</div>
+								<div class="marke_right">
+									<div></div>
+								</div>
+								<div class="marke_img marke_img03"></div>
+							</div>						
+						</div>
+						<h3 class="marke_txtCopy">搜索引擎</h3>
+						<p class="marke_txtProCopy">SEO优化<br/>搜索引擎竞价</p>
+					</li>
+					<li class="markeList">
+						<div class="markeCont">
+							<div class="markeTxt">
+								<div class="marke_left">
+									<div></div>
+								</div>
+								<div class="marke_right">
+									<div></div>
+								</div>
+								<div class="marke_img marke_img04"></div>
+							</div>						
+						</div>
+						<h3 class="marke_txtCopy">搜索引擎</h3>
+						<p class="marke_txtProCopy">SEO优化<br/>搜索引擎竞价</p>
+					</li>
+					<li class="markeList">
+						<div class="markeCont">
+							<div class="markeTxt">
+								<div class="marke_left">
+									<div></div>
+								</div>
+								<div class="marke_right">
+									<div></div>
+								</div>
+								<div class="marke_img marke_img05"></div>
+							</div>						
+						</div>
+						<h3 class="marke_txtCopy">搜索引擎</h3>
+						<p class="marke_txtProCopy">SEO优化<br/>搜索引擎竞价</p>
+					</li>
+					<li class="markeList">
+						<div class="markeCont">
+							<div class="markeTxt">
+								<div class="marke_left">
+									<div></div>
+								</div>
+								<div class="marke_right">
+									<div></div>
+								</div>
+								<div class="marke_img marke_img06"></div>
+							</div>						
+						</div>
+						<h3 class="marke_txtCopy">搜索引擎</h3>
+						<p class="marke_txtProCopy">SEO优化<br/>搜索引擎竞价</p>
+					</li>
+				</ul>				
+			</div>
+		</div>
+		<div class="about scro">
+			<ul id="aboutNav">
+				<li class="aboutSubNow">思想</li>
+				<li>关于</li>
+				<li>荣誉</li>
+			</ul>
+			<div id="aboutLoop">
+				<ul>
+					<li class="aboutSub">
+						<div class="aboutCont aboutRong">
+							<strong>放下荣誉，放眼未来</strong>
+							<p class="aboutTop">2009年 - 荣获海淀区创新企业</p>
+							<p>2010年 - 设计联盟评选为金牌设计企业</p>
+							<p>2010年 - 荣获中关村高新技术企业</p>	
+							<p>2011年" - 成功注册"千助商标，树立品牌</p>
+							<p>2013年" - 已拥有自主知识产权，国家软件著作权达12项之多</p>
+						</div>
+					</li>
+					<li class="aboutSub">
+						<div class="aboutCont">
+							<strong class="abouttxt">厚积薄发</strong>
+							<p class="aboutTop">登上封顶，不是为了包揽风光，是为了寻找更高的的山峰</p>
+							<p>日出东方，告别了昨天的荣耀，将光芒照向更远的地方</p>
+							<p>一路上，我们更在意如何积累和沉淀</p>
+							<b>下一秒，让你看，我们到底有多强</b>
+						</div>
+					</li>
+					<li class="aboutSub">
+						<div class="aboutCont aboutArc">
+							<strong>千助科技</strong>
+							<p class="aboutTop">成立于2008年，坐落于北京中关村科技园，是中国优秀的互联网服务提供商。自成立以来，专注于高端网站建设、移动互联应用、B/S架构系统研发、云服务器部署和运维，为企业客户的互联网应用提供一站式服务。</p>							
+							<p>我们始终坚持以客户需求为导向，为追求用户体验设计，提供有针对性的项目解决方案，千助人将不断地超越自我，挑战险峰！</p>
+							
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="aboutFooter">
+				<ul>
+					<li>
+						<strong>611</strong>
+						<span>位企业客户信赖之选</span>
+					</li>
+					<li>
+						<strong>267</strong>
+						<span>上市/集团企业设计作品</span>
+					</li>
+					<li>
+						<strong>2011</strong>
+						<span>年度金牌设计企业</span>
+					</li>
+					<li>
+						<strong>12</strong>
+						<span>项国家软件著作权</span>
+					</li>
+					<li>
+						<strong>96%</strong>
+						<span>以上客户续费率</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="telephone scro">
+			<div class="tele">
+				<div class="teleMa">
+					<img src="images/saowei.jpg" alt="">
+				</div>
+				<div class="teleAddress">
+					<ul>
+						<li class="teleImg">
+							<img src="images/dian.png" alt="">
+						</li>
+						<li>中国•北京 中关村科技园</li>
+						<li>联系电话:010-58859097/58851650</li>
+						<li>地址:海淀区上地东路盈创动力E座905</li>
+						<li>邮编:100085</li>
+						<li class="teleJiyu">[工作机会]</li>
+					</ul>
+				</div>
+				<div class="teleAddress">
+					<ul>
+						<li>Email:Service@1000zhu.com</li>
+						<li>中文域名：千助•中国</li>
+						<li>Copyright 2008-2015 千助科技 版权所有</li>
+						<li>京ICP备 08102474 号</li>
+						<li>京公网安备 11010802010984 号</li>
+					</ul>
+				</div>
+			</div>
+			<div class="teleEnd">
+				<img src="images/lan.png" alt="">
+			</div>
+		</div>
+		<div id="slideBar">
+			<ul id="slideNav">
+				<li id="slidePre">
+					<span></span>
+				</li>
+				<li id="slideQQ" class="slideMove">
+					<span></span>
+					<div class="tecent subQQ">
+						<p class="tecentTxt">网站建设咨询</p>
+						<p>在线沟通，请点我</p>
+						<div class="onlineTalk">在线咨询</div>
+					</div>
+				</li>
+				<li id="slidePhone" class="slideMove">
+					<span></span>
+					<div class="tecent subOnline">
+						<p class="tecentTxt">我要做网站</p>
+						<p>小助啊，抓紧给我来个电话!</p>
+						<div class="onlineBack">
+							<input class="youPhone" placeholder=""></input>
+							<button class="callBack">回拨</button>
+						</div>
+					</div>
+				</li>
+				<li id="slideWei" class="slideMove">
+					<span></span>
+					<div class="tecent subWei"></div>
+				</li>
+				<li id="slideNext">
+					<span></span>
+				</li>
+			</ul>
+			<div id="slideClose"></div>
+		</div>
+	</div>
+</body>
+<script src="js/index.js"></script>
+</html>
